@@ -19,7 +19,7 @@
       proud to work with
     </h2>
   </section>
-  <div class="marquee__wrapper flex flex-col gap-9 lg:gap-16">
+  <div class="marquee__wrapper flex flex-col gap-9 lg:gap-16 relative">
     <NuxtMarquee speed="50" direction="left">
       <div class="flex gap-8">
         <img
@@ -68,6 +68,10 @@
         />
       </div>
     </NuxtMarquee>
+    <img
+      class="absolute left-0 top-[-80px] z-[99] w-full object-cover"
+      src="../assets/image/overlay.png"
+    />
   </div>
 </template>
 
