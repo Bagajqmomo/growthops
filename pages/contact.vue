@@ -178,6 +178,9 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Contact Us - GrowthOps",
+});
 import axios from "axios";
 const form = reactive({
   fullName: "",

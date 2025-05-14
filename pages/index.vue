@@ -12,3 +12,9 @@
   </button>
   <Footer />
 </template>
+
+<script setup>
+useHead({
+  title: "Home - GrowthOps",
+});
+</script>

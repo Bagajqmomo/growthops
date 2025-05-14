@@ -28,6 +28,12 @@
           :key="num"
           :src="`/images/row-1-logo-${num}.png`"
         />
+        <img
+          v-for="num in 11"
+          class="max-h-[48px] sm:max-h-full"
+          :key="num"
+          :src="`/images/row-1-logo-${num}.png`"
+        />
       </div>
     </NuxtMarquee>
     <NuxtMarquee speed="50" direction="right">
@@ -38,10 +44,22 @@
           :key="num"
           :src="`/images/row-2-logo-${num}.png`"
         />
+        <img
+          v-for="num in 11"
+          class="max-h-[48px] sm:max-h-full"
+          :key="num"
+          :src="`/images/row-2-logo-${num}.png`"
+        />
       </div>
     </NuxtMarquee>
     <NuxtMarquee speed="50" direction="left">
       <div class="flex gap-8">
+        <img
+          v-for="num in 11"
+          class="max-h-[48px] sm:max-h-full"
+          :key="num"
+          :src="`/images/row-3-logo-${num}.png`"
+        />
         <img
           v-for="num in 11"
           class="max-h-[48px] sm:max-h-full"
