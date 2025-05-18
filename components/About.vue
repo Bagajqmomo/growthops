@@ -47,7 +47,7 @@
         this is
       </p>
       <h2
-        class="bg-[linear-gradient(90.67deg,#33FFF3_0.26%,#98E0FF_99.76%)] bg-clip-text text-transparent text-[36px] lg:text-[96px] lg:leading-[84px] font-extrabold tracking-[-0.02em]"
+        class="animate-gradient text-transparent text-[36px] lg:text-[96px] lg:leading-[84px] font-extrabold tracking-[-0.02em]"
       >
         GrowthOps Asia
       </h2>
@@ -139,3 +139,31 @@ const services = [
   },
 ];
 </script>
+
+<style scoped>
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 600% 0%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(
+    90deg,
+    #c00836,
+    #f14c77,
+    #fbb250,
+    #5ec9c1,
+    #004cba,
+    #f36,
+    #c00836
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 600% 100%;
+  animation: animate-gradient 30s ease-out infinite;
+}
+</style>

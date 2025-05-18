@@ -27,16 +27,11 @@
 </template>
 
 <script setup>
-import { ref, watch, computed } from "vue";
-
 const emit = defineEmits(["update:modelValue"]);
 
 const props = defineProps({
   modelValue: String,
   label: String,
-  placeholder: String,
-  disabled: Boolean,
-  required: Boolean,
 });
 
 const countryCode = ref("+60");
