@@ -3,7 +3,7 @@
     class="absolute top-0 left-0 z-[9999] w-full py-[39px] px-20 bg-[linear-gradient(to_right,rgba(4,5,6,0.56)_0%,rgba(4,5,6,0.56)_40%)] backdrop-blur-[20px] shadow-[0px_4px_24px_-1px_#00000040]"
   >
     <div class="w-full flex justify-between">
-      <NuxtLink to="/">
+      <NuxtLink to="/" @click="$emit('close')">
         <img src="../assets/image/logo.png" />
       </NuxtLink>
       <div
